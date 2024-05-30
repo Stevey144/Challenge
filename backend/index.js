@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const db = require("./config/db");
+//const db = require("./config/db");
 const cors = require("cors");
-db();
+//db();
 app.use(cors());
 app.use(express.json({limit: '50mb'}));
 
